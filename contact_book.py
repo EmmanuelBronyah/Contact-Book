@@ -32,8 +32,6 @@ def main():
             if user_input == "add":
                 add_input = input("How many contacts do you want to add? > ")
                 if add_input.isdigit():
-                    if int(add_input) <= 0:
-                        print("Number cannot be 0 or less than zero")
                     for i in range(1, int(add_input) + 1):
                         contact_details = input(f"Enter contact details of contact {i} > ").split('-')
 
